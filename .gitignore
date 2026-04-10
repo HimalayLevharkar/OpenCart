@@ -1,0 +1,6 @@
+logs/
+*.log
+*.log.gz
+target/
+test-output/
+screenshots/
