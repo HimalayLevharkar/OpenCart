@@ -1,2 +1,2 @@
-cd E:\QA\Automation Testing\Eclipse Workspace\eclipse-workspace\OpenCart
+cd E:\QA\Automation Testing\Eclipse Workspace\OpenCart
 mvn test

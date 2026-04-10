@@ -4,3 +4,5 @@ logs/
 target/
 test-output/
 screenshots/
+target/
+*.class
