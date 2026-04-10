@@ -48,20 +48,12 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 
 			String confirmMessage = registerPage.getConfirmationMsg();
 
-			if (confirmMessage.equals("Your Account Has Been Created!")) {
+			Assert.assertEquals(confirmMessage, "Your Account Has Been Created!", "Account creation failed or message mismatch");
 
-				Assert.assertTrue(true);
-
-			} else {
-
-				logger.error("Test Faild...");
-				logger.debug("Debug logs...");
-			}
-
-			// Assert.assertEquals(confirmMessage, "Your Account Has Been Created!");
 		} catch (Exception e) {
 
-			Assert.fail();
+			logger.error("Test Failed...", e);
+			Assert.fail("Exception occurred: " + e.getMessage());
 		}
 
 		logger.info("****** Finished TC001_AccountRegistrationTest ******");
